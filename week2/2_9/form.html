@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="http://localhost/WebProgramming/static/css/style.css">
+        <style media="screen">
+          .row {
+            margin-bottom: 1rem;
+          }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+        <form action="form.php" method="POST">
+            <h1>Registration Form</h1>
+            <div class="row">
+              <div class="col-4">
+                <label for="email">Email:</label>
+              </div>
+              <div class="col-8">
+                <input type="email" name="email" value="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <label for="password">Password:</label>
+              </div>
+              <div class="col-8">
+                <input type="password" name="password" value="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <label for="name">Name:</label>
+              </div>
+              <div class="col-8">
+                <input type="text" name="name" value="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <label>May we contact you?</label>
+              </div>
+              <div class="col-8">
+                <input type="radio" name="contactPref" id="yes" value="Yes">
+                <label for="yes">Yes</label>
+                <input type="radio" name="contactPref" id="no" value="No">
+                <label for="no">No</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <label>Please check all the ways you have traveled:</label>
+              </div>
+              <div class="col-8">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Walk">
+                <label for="vehicle1">Walk</label>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Bicycle">
+                <label for="vehicle2">Bicycle</label>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Car">
+                <label for="vehicle3">Car</label>
+                <input type="checkbox" id="vehicle4" name="vehicle4" value="Plane">
+                <label for="vehicle4">Plane</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <label for="accommodation">Indicate your preference for accommodations:</label>
+              </div>
+              <div class="col-8">
+                <select name="accommodation">
+                  <option value="fine">A fine hotel</option>
+                  <option value="cheap">A cheap hotel</option>
+                </select>
+              </div>
+            </div>
+            <label for="other">Any other comments?</label>
+            <br>
+            <textarea name="other" rows="8" cols="80"></textarea>
+            <br>
+            <br>
+            <input type="submit" name="" value="Click to submit">
+            <input type="reset" name="" value="Erase and Restart">
+        </form>
+      </div>
+    </body>
+</html>
