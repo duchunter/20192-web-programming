@@ -9,6 +9,15 @@
     <h1>Generate Square and Cube Values</h1>
     <br>
     <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="get">
+      <?php
+        if (array_key_exists('start', $_GET)) {
+          $start = $_GET['start'];
+          $end = $_GET['end'];
+        } else {
+          $start = 0;
+          $end = 0;
+        }
+      ?>
       <table>
         <tr>
           <td>Select start number:</td>
@@ -16,7 +25,11 @@
             <select name="start">
               <?php
                 for ($i = 0; $i <= 10; $i++) {
-                  print "<option>$i</option>";
+                  if ($start == $i) {
+                    print "<option selected>$i</option>";
+                  } else {
+                    print "<option>$i</option>";
+                  }
                 }
               ?>
             </select>
@@ -28,7 +41,11 @@
             <select name="end">
               <?php
                 for ($i = 0; $i <= 20; $i++) {
-                  print "<option>$i</option>";
+                  if ($end == $i) {
+                    print "<option selected>$i</option>";
+                  } else {
+                    print "<option>$i</option>";
+                  }
                 }
               ?>
             </select>
@@ -51,8 +68,6 @@
         </tr>
         <?php
           if (array_key_exists('start', $_GET)) {
-            $start = $_GET['start'];
-            $end = $_GET['end'];
             $i = $start;
             while ($i < $end) {
               $sqr = $i * $i;
