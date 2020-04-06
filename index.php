@@ -11,13 +11,7 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        $first_num = 100;
-        $second_num = 200;
-        $tmp = $first_num;
-        $first_num = $second_num;
-        $second_num = $tmp;
-        print("$first_num $second_num");
-        print("Hello" . " " . "world");
+          echo phpinfo();
         ?>
     </body>
 </html>

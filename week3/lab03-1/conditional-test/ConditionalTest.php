@@ -64,7 +64,7 @@
           print("You have to try again!");
           break;
         default:
-          print("Illegal grade!")
+          print("Illegal grade!");
       }
     ?>
   </body>
