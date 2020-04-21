@@ -1,0 +1,20 @@
+h1 {
+  text-align: center;
+}
+
+p {
+  margin: 0.25in;
+  border: 0.25in solid black;
+  padding: 0.25in;
+  background: url("https://i2.wp.com/files.123freevectors.com/wp-content/original/102862-brown-square-pattern.jpg?w=800&q=95");
+}
+
+body {
+  background: url("https://i2.wp.com/files.123freevectors.com/wp-content/original/103558-white-square-pattern.jpg?w=800&q=95");
+}
+
+.banner {
+  background: url("https://i2.wp.com/files.123freevectors.com/wp-content/original/105167-orange-star-pattern.jpg?w=800&q=95") repeat-x;
+  font-size: 50pt;
+  font-family: Arial Rounded MT Bold;
+}
