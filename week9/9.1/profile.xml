@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE profile [
+  <!ELEMENT name (firstname, lastname) >
+  <!ELEMENT firstname ANY >
+  <!ELEMENT lastname ANY >
+  <!ELEMENT id ANY >
+]>
+
+<profile>
+  <name>
+    <firstname>Duc</firstname>
+    <lastname>Ha</lastname>
+    <id>20161067</id>
+  </name>
+</profile>
